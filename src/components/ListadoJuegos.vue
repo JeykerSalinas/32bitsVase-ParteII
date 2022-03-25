@@ -16,7 +16,7 @@
         <tr
           v-for="(data, i) in filterData(data)"
           :key="i"
-          :class="{ 'table-success': data.destacado }"
+          :style="{ 'background-color': data.color }"
         >
           <th scope="row">{{ data.codigo }}</th>
           <td>{{ data.nombre }}</td>
