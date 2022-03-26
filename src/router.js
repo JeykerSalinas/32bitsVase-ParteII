@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Inicio from "./views/Inicio";
+import NotFound from "./views/NotFound"
 const Busqueda = () => import("./views/Busqueda");
 const Tienda = () => import("./views/Tienda");
 
@@ -23,6 +24,11 @@ export default new Router({
       path: "/tienda",
       name: "tienda",
       component: Tienda,
+    },
+    {
+      path: "/*",
+      name: "notFpund",
+      component: NotFound,
     },
   ],
 });
