@@ -6,7 +6,7 @@
       </div>
       <p class="col-3">
         Título de juegos en stock:
-        <span class="badge bg-secondary">{{ sumTitulos }}</span>
+        <span class="badge bg-secondary">{{ stockGames }}</span>
       </p>
       <p class="col-3">
         Ejemplares de juegos en stock:
@@ -27,7 +27,7 @@ export default {
   },
   computed: {
     ...mapState(["myData"]),
-    ...mapGetters(["sumTitulos", "sumEjemplares"]),
+    ...mapGetters(["sumTitulos", "sumEjemplares","stockGames"]),
   },
   components: {
     ListadoJuegos,

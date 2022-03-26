@@ -25,6 +25,11 @@
                 >Búsqueda</router-link
               >
             </li>
+            <li class="nav-item">
+              <router-link class="nav-link active" :to="{ name: 'tienda' }"
+                >Búsqueda</router-link
+              >
+            </li>
           </ul>
         </div>
       </div>
